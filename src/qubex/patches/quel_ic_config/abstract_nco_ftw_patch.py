@@ -1,8 +1,9 @@
 from fractions import Fraction
 from typing import Union
-
-from quel_ic_config.ad9082_nco import AbstractNcoFtw
-
+try: 
+    from quel_ic_config.ad9082_nco import AbstractNcoFtw
+except:
+    pass
 
 def patched_from_frequency(
     cls,
